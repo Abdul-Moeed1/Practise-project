@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
    font-family: "Roboto", sans-serif;
-  background: url(images/background.jpg);
+  background: url(background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -80,7 +80,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
    box-sizing: border-box; 
-  background: url(images/campusImg.png);
+  background: url(campusImg.png);
   background-size:cover;
   background-position:center center;
    background-repeat: no-repeat;
@@ -147,7 +147,7 @@ body {
 
 @media (max-width: 768px) {
   body{
-      background: url(images/backgroundMobile.jpg);
+      background: url(backgroundMobile.jpg);
      background-size: cover;
        background-repeat: no-repeat;
     background-attachment: fixed;
@@ -183,7 +183,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
      box-sizing: border-box; 
-    background: url(images/campusImg.png);
+    background: url(campusImg.png);
     background-size:cover;
     background-position:center center;
      background-repeat: no-repeat;
