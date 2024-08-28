@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body {
+ 
+  margin: 0;
+  padding: 0;
+   font-family: "Roboto", sans-serif;
+  background: url(images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.navbar {
+   position: fixed;
+  top: 0;
+  left: 0; 
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  box-sizing: border-box; /* Ensures padding is included in the width */
+  z-index: 1000; /* Keeps the navbar above other content */
+ 
+}
+.logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.logoText {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+.logoImg{
+  width: 40px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 40px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nav-links a span{
+  margin-right: 7px;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 25px;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.hero{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+   box-sizing: border-box; 
+  background: url(images/campusImg.png);
+  background-size:cover;
+  background-position:center center;
+   background-repeat: no-repeat;
+  height: 70vh;
+  margin: 20vh 20vw 20vh 20vw ;
+  border-radius: 30px;
+  color: white;
+  padding:40px;
+}
+.heroTitle{
+  font-size: 40px;
+  font-weight: bold;
+}
+.heroText{
+  font-size: 25px;
+  font-weight: normal;
+  text-align:justify;
+}
+.heroBtn{
+  display:flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius:100px;
+  font-size: 21px;
+  font-weight: normal;
+  width: 250px;
+  height:55px;
+  color:white;
+  background-color: rgba(158, 183, 200, 0.56); 
+}
+
+.footer {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap:20px;
+   background-color: rgba(52, 152, 219, 0.56); /* Background color for the footer */
+  color: white; /* Text color */
+  padding: 40px 30px 20px 30px; /* Padding inside the footer */
+  text-align: center; /* Center text horizontally */
+  border-top-left-radius: 30px; /* Curved top-left corner */
+  border-top-right-radius: 30px; /* Curved top-right corner */
+  position: relative;
+  bottom: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.footerTitle{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.footerImg{
+  width:30px;
+  margin: 0 20px;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  body{
+      background: url(images/backgroundMobile.jpg);
+     background-size: cover;
+       background-repeat: no-repeat;
+    background-attachment: fixed;
+     
+  }
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      background-color: #333;
+      position: absolute;
+      left: 0;
+      top: 60px; /* Adjust to match the height of your navbar */
+  }
+
+  .nav-links li {
+      width: 100%;
+      padding: 10px 20px;
+      border-top: 1px solid #444;
+  }
+
+  .nav-links.show {
+      display: flex;
+  }
+
+  .burger {
+      display: flex;
+  }
+
+  .hero{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+     box-sizing: border-box; 
+    background: url(images/campusImg.png);
+    background-size:cover;
+    background-position:center center;
+     background-repeat: no-repeat;
+    height: 70vh;
+    margin: 20vh 5vw 20vh 5vw ;
+    border-radius: 50px;
+    color: white;
+    padding:35px;
+  }
+
+  .heroTitle{
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .heroText{
+    font-size: 25px;
+    font-weight: normal;
+    text-align:left;
+  }
+
+  .heroBtn{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+    margin: 0 auto;
+    text-decoration: none;
+    border-radius:100px;
+    font-size: 22px;
+    font-weight: normal;
+    width: 250px;
+    height:55px;
+    color:white;
+    background-color: rgba(158, 183, 200, 0.56); 
+  }
+
+  
+}
